@@ -1,0 +1,12 @@
+import demo.Artist
+
+model {
+    Artist artist
+}
+
+json {
+    artistName artist.name
+    albums {
+        json tmpl.album(artist.albums ?: [])
+    }
+}

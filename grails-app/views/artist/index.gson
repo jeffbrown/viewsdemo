@@ -1,0 +1,7 @@
+import demo.Artist
+
+model {
+    Iterable<Artist> artistList
+}
+
+json tmpl.artist(artistList ?: [])

@@ -1,0 +1,9 @@
+import demo.Album
+
+model {
+    Album album
+}
+
+json {
+    albumTitle album.title
+}
